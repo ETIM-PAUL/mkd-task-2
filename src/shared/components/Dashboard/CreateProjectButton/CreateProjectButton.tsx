@@ -8,11 +8,15 @@ interface Props {
   className?: string;
 }
 
+const newForm = () => {};
+
 const CreateProjectButton = ({ className }: Props) => (
-  // <PurpleButton className={className || ""} onClick={onClick}>
-  //   Create Project <Icon type="plus" />
-  // </PurpleButton>
-  <>{className}</>
+  <>
+    <PurpleButton className={className || ''} onClick={() => newForm()}>
+      Create Project <Icon type="plus" />
+    </PurpleButton>
+    <>{className}</>
+  </>
 );
 
 CreateProjectButton.defaultProps = {

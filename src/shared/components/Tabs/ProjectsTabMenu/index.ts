@@ -1,1 +1,1 @@
-export { ProjectsTabMenu } from "./ProjectsTabMenu";
+export { ProjectsTabMenu } from './ProjectsTabMenu';

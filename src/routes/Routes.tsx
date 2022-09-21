@@ -37,6 +37,7 @@ import { PhotoShareSplashView } from 'Containers/Public/PhotoShare/PhotoShareSpl
 // dashboard components
 import { CreateProjectMain, Projects } from 'Containers/Projects';
 import { People } from 'Containers/People';
+import { Forms } from 'Containers/Forms';
 import { Crew } from 'Containers/Crew';
 import { Project } from 'Containers/Project';
 import { Account, About } from 'Containers/User';
@@ -147,6 +148,14 @@ const ProjectsRoute = () => (
     <ProjectsProvider>
       <Projects />
     </ProjectsProvider>
+  </DashboardWrapper>
+);
+// Forms related routes
+const FormsRoute = () => (
+  <DashboardWrapper>
+    {/* <ProjectsProvider> */}
+    <Forms />
+    {/* </ProjectsProvider> */}
   </DashboardWrapper>
 );
 
@@ -331,6 +340,7 @@ export const Routes = () => (
       <PrivateRoute exact path="/welcomeback" render={WelcomeBackRoute} />
       <PrivateRoute exact path="/projects/create" render={CreateProjectRoute} />
       <PrivateRoute exact path="/projects/editAddress" render={EditAddressRoute} />
+      <PrivateRoute exact path="/form" render={FormsRoute} />
       <PrivateRoute exact path="/projects" render={ProjectsRoute} />
       <PrivateRoute exact path="/projects/projectDashboard" render={ProjectRoute} />
       <PrivateRoute exact path="/projects/photoManagement/addLocations" render={ProjectPhotoManagementRoute} />

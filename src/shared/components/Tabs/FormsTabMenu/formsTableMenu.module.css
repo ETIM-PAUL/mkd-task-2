@@ -40,6 +40,10 @@ button {
   margin-right: 1em;
 }
 
+.icon {
+  margin-right: 1em;
+}
+
 .icon-active path {
   fill: #9a00ff;
 }
@@ -48,7 +52,7 @@ button {
   fill: #fff;
 }
 
-.icon-phone {
+.icon-projects {
   padding-bottom: 0.265em;
 }
 
@@ -65,7 +69,7 @@ button {
 }
 
 .button {
-  width: 140px;
+  width: 230px;
 }
 
 .filterButtonContainer {

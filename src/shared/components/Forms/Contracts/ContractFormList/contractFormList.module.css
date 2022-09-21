@@ -1,0 +1,55 @@
+.contractListWrapper {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5b476b;
+  border-color: #e8e7ed;
+  background-color: #ffffff;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.contractListWrapper thead th:first-child,
+.contractListWrapper tbody td:first-child {
+  padding-left: 72px;
+}
+
+.contractListWrapper thead th:last-child,
+.contractListWrapper tbody td:last-child {
+  padding-right: 72px;
+}
+
+.contractListWrapper thead th {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #777185;
+  padding-bottom: 1.2em;
+  border-bottom-color: #e8e7ed !important;
+}
+
+.contractListWrapper tbody tr:hover {
+  background-color: #f4e5ff;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.contractListWrapper tbody td {
+  vertical-align: middle;
+}
+
+.contractListWrapper p {
+  margin-bottom: 0;
+}
+
+.trashBase {
+  margin-left: 10px;
+}
+
+.thSpan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
